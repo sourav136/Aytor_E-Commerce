@@ -5,7 +5,7 @@ import { FaEye } from "react-icons/fa";
 import { MdOutlineSignalCellularAlt } from "react-icons/md";
 import './Slider_2.css';
 import ViewItem from '../ViewItem/ViewItem.jsx'
-import Rating from '../../assets/images/rating.png';
+import Rating from '../../assets/images/Rating.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import GridCardList from '../Grid/GridCardList.js';
 import { useCart } from '../Context/CartContext.jsx';

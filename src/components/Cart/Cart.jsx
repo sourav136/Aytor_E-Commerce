@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Cart.css';
-import CommonButton from '../CommonButton/CommonButton';
+// import CommonButton from '../CommonButton/CommonButton';
 import BlankBanner from '../BlankBanner/BlankBanner';
 import IconsMini from '../IconsMini/IconsMini';
 import { ImBin } from 'react-icons/im';

@@ -1,6 +1,6 @@
 import React from 'react';
 import './search.css'
-import Banner from '../../assets/images/search.png';
+import Banner from '../../assets/images/Search.png';
 import { RxCross2 } from "react-icons/rx";
 
 const Search = ({trigger, lock}) => {
