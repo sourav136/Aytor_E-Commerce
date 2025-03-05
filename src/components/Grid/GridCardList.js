@@ -13,9 +13,9 @@ import Grid12 from '../../assets/images/Grid-12.png'
 import BestSeller1 from '../../assets/images/Mask here (1).png';
 import BestSeller2 from '../../assets/images/Mask here (2).png';
 import BestSeller3 from '../../assets/images/Mask here (3).png';
-import BestSeller4 from '../../assets/images/Mask here (4).png';
+import BestSeller4 from '../../assets/images/Mask Here (4).png';
 import BestSeller5 from '../../assets/images/Mask here (5).png';
-import BestSeller6 from '../../assets/images/Mask here (6).png';
+import BestSeller6 from '../../assets/images/Mask Here (6).png';
 import BestSeller7 from '../../assets/images/Mask here (7).png';
 import BestSeller8 from '../../assets/images/Mask here (8).png';
 import Product1 from '../../assets/images/product 1.png'
