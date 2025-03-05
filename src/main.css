@@ -1,0 +1,16 @@
+:root {
+	--text-color: #11161e;
+	--3d-primary-color: #151a32;
+	--comon-colot: #fff;
+	--1st-primary-color: #ff6f61;
+	--paragraph-color: #444;
+	--2nd-primary-color: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+	--a6aab7: #a6aab7;
+}
+:root {
+    --font-family: "Josefin Sans", sans-serif;
+    --second-family: "Roboto", sans-serif;
+}

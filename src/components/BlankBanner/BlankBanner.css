@@ -1,0 +1,29 @@
+.blank{
+    height: 400px;
+    background-color: var(--text-color);
+    opacity: 0.7;
+}
+
+#blank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blank .container .content h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 121%;
+    text-align: center;
+    color: var(--comon-colot);
+}
+
+#blank .container .content p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: var(--comon-colot);
+}

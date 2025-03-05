@@ -1,0 +1,142 @@
+:root {
+	--text-color: #11161e;
+	--3d-primary-color: #151a32;
+	--comon-colot: #fff;
+	--1st-primary-color: #ff6f61;
+	--paragraph-color: #444;
+	--2nd-primary-color: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+	--a6aab7: #a6aab7;
+}
+:root {
+    --font-family: "Josefin Sans", sans-serif;
+    --second-family: "Roboto", sans-serif;
+  }
+
+
+.banner{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+
+.text{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #828282;
+    padding: 11px 20px;
+    width: 500px;
+    outline: none;
+    border: none;
+}
+
+.search-button{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--comon-colot);
+    border: none;
+    padding: 10px 30px;
+    margin-left: 10px;
+    box-shadow: 0 0 50px 0 rgba(21, 26, 50, 0.05);
+    background: var(--3d-primary-color);
+}
+
+.search-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.parent{
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.wrap{
+    position: fixed;
+    inset: 0;
+    opacity: 0.6;
+    background-color: var(--text-color);
+    z-index: 10;
+}
+
+.search-here{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: #fff;
+}
+
+.lock{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    
+}
+
+.unlock{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.cross{
+    display: inline-block;
+    padding: 10px;
+    color: #ff5645;
+    border-radius: 50%;
+    border: 4px solid #ff5645;
+    font-size: 2rem;
+    line-height: 0;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-weight: 700;
+    background-color: #000;
+    transition: 0.4s;
+    z-index: 100;
+}
+
+.cross:hover{
+    transform: rotate(360deg);
+    scale: 1.2;
+}
+
+@media (max-width: 991.98px){
+    .banner{
+        height: 250px;
+        width: 320px;
+    }
+
+    .text{
+        width: 180px;
+        padding: 5px 10px;
+    }
+
+    .search-button{
+        padding: 5px 10px;
+    }
+
+    .cross{
+        font-size: 1.5rem;
+        border: 2.5px solid #ff5645;
+        padding: 5px;
+    }
+}

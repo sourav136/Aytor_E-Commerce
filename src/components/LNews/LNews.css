@@ -1,0 +1,91 @@
+.latest-news h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 36px;
+}
+
+.latest-news .latest-news-card{
+    width: 312px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 5px 30px 0 rgba(17, 22, 30, 0.08);
+    background: var(--comon-colot);
+}
+
+.latest-news .latest-news-card .latest-news-head{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color);
+    padding-top: 15px;
+    transition: 0.4s;
+}
+
+.latest-news .latest-news-card:hover .latest-news-head{
+    color: var(--1st-primary-color);
+}
+
+.latest-news .latest-news-card .ln-details{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.latest-news .latest-news-card .latest-news-card-last .latest-news-read-more{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.latest-news .latest-news-card:hover .latest-news-read-more{
+    color: var(--1st-primary-color);
+}
+
+.latest-news .latest-news-card .latest-news-card-last span{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+}
+
+#LN .swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+#LN .swiper-pagination-bullet{
+    border-radius: 5px;
+    width: 10px;
+    height: 6px;
+    background: #bdbdbd;
+}
+
+#LN .swiper-pagination-bullet-active{
+    border-radius: 5px;
+    width: 26px;
+    height: 6px;
+    background: var(--3d-primary-color);
+}
+
+.LN-header{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+}

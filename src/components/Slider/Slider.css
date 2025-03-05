@@ -1,0 +1,146 @@
+#sswipe{
+    z-index: 0;
+}
+
+.slides{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.slides h4{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #1d1d1d;
+    margin-top: 240px;
+    animation: animateh4 1s ease-in-out 1;
+}
+
+@keyframes animateh4{
+    0%{
+        padding-left: 100px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        padding-left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.slides h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #1d1d1d;
+    margin: 15px 0px;
+    animation: animateh2 1s ease-in-out 1;
+    animation-delay: 0.1s;
+}
+
+@keyframes animateh2{
+    0%{
+        padding-left: 300px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        padding-left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+.slides p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #1d1d1d;
+    animation: animatep 1s ease-in-out 1;
+    animation-delay: 0.2s;
+}
+
+
+@keyframes animatep{
+    0%{
+        padding-left: 300px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        padding-left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.slides a{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--comon-colot);
+    background-color:var(--1st-primary-color);
+    padding: 13px 37px;
+    text-decoration: none;
+    margin: 40px 0px;
+    display: inline-block;
+    margin-bottom: 240px;
+}
+
+.a-container{
+    animation: animatea 1s ease-in-out 1;
+    animation-delay: 0.3s;
+
+}
+
+@keyframes animatea{
+    0%{
+        padding-left: 300px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        padding-left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+.swiper-pagination-bullet-active{
+    background-color: var(--1st-primary-color);
+}
+
+
+#swipe .swiper-pagination-bullet{
+    border-radius: 5px;
+    width: 28px;
+    height: 6px;
+    background: var(--1st-primary-color);
+}
+

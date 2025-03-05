@@ -1,0 +1,111 @@
+.commonFooter{
+    background-color: var(--bg);
+}
+
+.commonFooter-head-text h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color);
+}
+
+.commonFooter-head-text p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    max-width: 495px;
+}
+
+.commonFooter-sub-input{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #8f8f8f;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 40px;
+    width: 100%;
+    max-width: 424px;
+    border: none;
+    outline: none;
+}
+
+.commonFooter-sub-button{
+    background-color: var(--1st-primary-color);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--comon-colot);
+    padding: 15px 50px;
+    border: none;
+}
+
+.common-Footer-body-icons{
+    width: 175px;
+}
+
+.commonFooter-icons{
+    color: black;
+    transition: 0.4s;
+}
+
+.commonFooter-icons:hover{
+    color: var(--1st-primary-color);
+}
+
+.commonFooter-body-image{
+    width: 120px;
+    padding-bottom: 20px;
+}
+
+.commonFooter-body-p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    padding-right: 20px;
+}
+
+.commonFooter-list-head{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 142%;
+    color: var(--text-color);
+}
+
+.commonFooter-list-item-ul{
+    padding: 0;
+}
+
+.commonFooter-list-item{
+    list-style-type: none;
+}
+
+.commonFooter-list-item a{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.commonFooter-list-item a:hover{
+    color: var(--1st-primary-color);
+}
+
+#commonFooter form .btn-group{
+    z-index: 1;
+    transform: none;
+}
+

@@ -1,0 +1,158 @@
+.blog-post-h5{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 142%;
+    color: var(--text-color);
+    margin: 0;
+    transition: 0.4s;
+}
+
+.blog-post-p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    margin: 0;
+    max-width: 364px;
+    transition: 0.4s;
+}
+
+.blog-post-a{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.blog-post{
+    position: relative;
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    display: block;
+    transition: 0.4s;
+}
+
+.blog-post-text{
+    padding: 30px;
+}
+
+.blog-date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.blog-date-background{
+    background-color: var(--text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    height: 40px;
+    width: 150px;
+    z-index: 10;
+}
+
+.blog-date p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--comon-colot);
+    z-index: 100;
+    padding: 7px 13px;
+    transition: 0.4s;
+}
+
+.blog-post:hover{
+    scale: 1.01;
+}
+
+.blog-post:hover .blog-date p{
+    color: var(--1st-primary-color);
+}
+
+.blog-post:hover .blog-post-a{
+    color: var(--1st-primary-color);
+}
+
+.blog-post:hover .blog-post-h5{
+    color: var(--1st-primary-color);
+}
+
+.blogs-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#blogs .page-link{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--paragraph-color);
+}
+
+#blogs .active>.page-link{
+    background-color: var(--text-color);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--comon-colot);
+}
+
+@media (max-width: 768px){
+    .blog-post{
+        width: 340px;
+    }
+    
+    .blog-post img{
+        width: 340px;
+    }
+    
+    .blog-post-h5{
+        font-size: 18px;
+    }
+    
+    .blog-post-p{
+        font-size: 14px;
+    }
+
+    #blogs .page-link{
+        font-size: 16px
+    }
+
+    #blogs .active>.page-link{
+        font-size: 16px
+    }
+}
+
+
+@media (max-width: 420px){
+    .blog-post{
+        width: 300px;
+    }
+
+    .blog-post img{
+        width: 300px;
+    }
+    
+    #blogs .page-link{
+        font-size: 12px
+    }
+    
+    #blogs .active>.page-link{
+        font-size: 12px
+    }
+}

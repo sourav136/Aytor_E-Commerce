@@ -1,0 +1,178 @@
+.shop-grid-cards-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.shop-grid-card{
+  position: relative;
+  width: max-content;
+}
+
+.status{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--1st-primary-color);
+  height: 26px;
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+.status p{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--comon-colot);
+  padding: 0px 23px;
+}
+
+.grid-card-text h5{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--text-color);
+}
+
+.grid-card-text p{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--paragraph-color);
+}
+
+.grid-card-bottom-part{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.grid-card-rating span{
+  display: inline-block;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--paragraph-color);
+  margin-left: 5px;
+}
+
+
+#grid .page-link{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: var(--paragraph-color);
+}
+
+#grid .active>.page-link{
+  background-color: var(--text-color);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: var(--comon-colot);
+}
+
+.grid-card-icons{
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.grid-card-icon-container{
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: var(--3d-primary-color);
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+
+.grid-card-icon{
+  color: var(--comon-colot);
+  
+}
+
+.grid-card-icon-container:hover{
+  background-color: var(--1st-primary-color);
+}
+
+.shop-grid-card:hover .grid-card-icons{
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+@media (max-width: 768px){
+  #grid .page-link{
+      font-size: 16px
+  }
+
+  #grid .active>.page-link{
+      font-size: 16px
+  }
+}
+
+
+@media (max-width: 576px){
+  .grid-image{
+    width: 145px;
+  }
+  .grid-card-bottom-part{
+    flex-direction: column;
+  }
+  .grid-card-text h5{
+    font-size: 13px;
+  }
+  .grid-card-text p{
+    font-size: 13px;
+    margin: 0;
+  }
+  .grid-card-rating span{
+    font-size: 13px;
+  }
+  .status p{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .status{
+    height: 20px;
+    width: 60px;
+  }
+  .grid-card-icon-container{
+    height: 20px;
+    width: 20px;
+  }
+  .grid-card-icon{
+    font-size: 0.6rem;
+  }
+}
+
+
+@media (max-width: 420px){
+  #grid .page-link{
+      font-size: 12px
+  }
+  
+  #grid .active>.page-link{
+      font-size: 12px
+  }
+}

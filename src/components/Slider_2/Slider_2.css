@@ -1,0 +1,137 @@
+#slider .swiper {
+    height: auto;
+}
+
+#slider .card {
+    border: none;
+    transition: 0.4s;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensure cards are displayed */
+}
+
+.slider-card-container{
+    position: relative;
+}
+
+
+.new-arrival {
+    visibility: visible; /* Change from hidden to visible */
+}
+
+.card-visible {
+    visibility: visible; /* Ensure this class is also visible */
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 700 !important;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Other styles remain unchanged */
+
+
+#slider .card .offer {
+    border-radius: 0 0 13px 13px;
+    width: 26px;
+    height: 52px;
+    background-color: var(--1st-primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    position: absolute;
+    top: 2px;
+    left: 24px;
+}
+
+#slider .card .slider-icons {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+#slider .slider-card-container:hover .slider-icons {
+    right: 17px;
+    visibility: visible;
+    opacity: 1;
+}
+
+#slider .card .slider-icons .slider-icon {
+    height: 38px;
+    width: 38px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    transition: 0.4s;
+}
+
+#slider .card .slider-icons .slider-icon:hover {
+    background-color: var(--1st-primary-color);
+}
+
+#slider .card .offer p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0;
+    color: var(--comon-colot);
+    margin: 0;
+    transform: rotate(270deg);
+}
+
+#slider .card-body {
+    border-left: 1px solid var(--bg);
+    border-right: 1px solid var(--bg);
+    border-bottom: 1px solid var(--bg);
+}
+
+#slider .card-body h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#slider .card-body{
+    width: 316px;
+}
+
+.product-image{
+    display: block;
+    width: 316px;
+}
+
+#slider .card-body p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#slider .card-body img {
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+.slider-icon{
+    cursor: pointer;
+}
+

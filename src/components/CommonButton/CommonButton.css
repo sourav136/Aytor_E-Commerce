@@ -1,0 +1,12 @@
+.commonA{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--comon-colot);
+    padding: 13px 18px;
+    display: inline-block;
+    background-color: var(--1st-primary-color);
+}

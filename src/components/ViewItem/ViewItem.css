@@ -1,0 +1,178 @@
+.item-quantity .item-add, .item-decrease{
+    border: 1px solid var(--paragraph-color);
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.item-number{
+    border: 1px solid var(--paragraph-color);
+    border-radius: 3px;
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    text-align: center;
+}
+
+.view-card{
+    display: flex;
+    z-index: 110;
+    position: relative;
+}
+
+.view-card-cross{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+}
+
+.view-card-cross-icon{
+    color: var(--1st-primary-color);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.view-card-cross:hover .view-card-cross-icon{
+    transform: rotate(360deg);
+}
+
+.view-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 312px;
+    background-color: white;
+}
+
+.view-card-container{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0;
+    transition: 0.4s;
+    z-index: 10;
+}
+
+.view-card-show{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1;
+    transition: 0.4s;
+}
+
+.view-card-container::before{
+    position: absolute;
+    content: '';
+    background-color: var(--bg);
+    inset: 0;
+    opacity: 0.4;
+    z-index: 100;
+}
+
+.view-card-show::before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    inset: 0;
+    opacity: 0.6;
+    z-index: 100;
+}
+
+.view-card-content h5{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--text-color);
+}
+
+.view-card-content p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+}
+
+.card-rating img{
+    display: block;
+    margin-bottom: 16px;
+}
+
+.item-quantity .item-add, .item-decrease{
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: #bdbdbd;
+}
+
+.item-number{
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    width: 70px;
+    height: 30px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    margin: 0px 10px;
+    cursor:none;
+}
+
+.add-to-cart{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: var(--comon-colot);
+    padding: 11px 23px;
+    border: none;
+    background-color: var(--1st-primary-color);
+    display: block;
+    margin-top: 16px;
+}
+
+@media (max-width: 650px) {
+    .view-card{
+        flex-direction: column;
+    }
+
+    .view-card-content h5{
+        margin-top: 16px;
+    }
+
+    .add-to-cart{
+        margin-bottom: 16px;
+    }
+
+    .view-card-image{
+        width: 280px;
+    }
+
+    .view-card-content{
+        width: 280px;
+    }
+}
