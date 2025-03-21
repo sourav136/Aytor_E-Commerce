@@ -71,6 +71,7 @@
   line-height: 167%;
   text-align: center;
   color: var(--paragraph-color);
+  cursor: pointer;
 }
 
 #grid .active>.page-link{
