@@ -81,7 +81,7 @@ const Grid = () => {
                                         <div className={`status ${cards.status === 'new' ? 'active' : ''}`}>
                                             <p>New</p>
                                         </div>
-                                        <img src={cards.image} alt="" className='d-block grid-image'/>
+                                        <img loading='lazy' src={cards.image} alt="" className='d-block grid-image'/>
                                         <div className="grid-card-bottom-part">
                                             <div className="grid-card-text">
                                                 <h5>{cards.heading}</h5>
@@ -142,22 +142,6 @@ const Grid = () => {
                                 </li>
                             </ul>
                         </nav>
-                        {/* <div className="shop-grid-card">
-                            <div className="status">
-                                <p>New</p>
-                            </div>
-                            <img src={Grid1} alt="" className='d-block'/>
-                            <div className="grid-card-bottom-part">
-                                <div className="grid-card-text">
-                                    <h5>Spaghetti Hoodie</h5>
-                                    <p>$125.65</p>
-                                </div>
-                                <div className="grid-card-rating">
-                                    <img src={Rating} alt="" className='d-inline-block' />
-                                    <span>(5)</span>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>

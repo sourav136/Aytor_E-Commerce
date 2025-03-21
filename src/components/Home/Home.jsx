@@ -25,12 +25,12 @@ import Slider_2 from '../Slider_2/Slider_2';
 import LNews from '../LNews/LNews';
 import IconsMini from '../IconsMini/IconsMini'
 import BenefitsSlider from '../BenefitsSlider/BenefitsSlider';
-import GridCardList from '../Grid/GridCardList';
 import ViewItem from '../ViewItem/ViewItem';
 import { Link } from 'react-router-dom';
 import { useCart } from '../Context/CartContext';
 import { useNavigate } from 'react-router-dom';
 import { useWishlist } from '../Context/WishlistContext';
+import BestSellerProducts from './BestSellerProducts'
 
 
 const Home = () => {
@@ -130,11 +130,11 @@ const Home = () => {
                         <div className="align-cards d-flex align-items-center justify-content-center">
                             <div className="cards-container w-auto d-flex justify-content-around flex-wrap ">
                                 {
-                                    GridCardList.filter(items => items.product === 'best-seller').map((items, index)=>{
+                                    BestSellerProducts.map((items, index)=>{
                                         return(
                                             <div className="card mb-4" key={index}>
                                                 <div className="card-image-part">
-                                                    <img src={items.image} alt="" />
+                                                    <img loading='lazy' src={items.image} alt="" />
                                                     <div className={`best-seller-offer ${items.status === 'new' ? 'best-seller-offer-active' : ''}`}>
                                                         <p>{items.subStatus}</p>
                                                     </div>

@@ -73,7 +73,7 @@ const Slider_2 = () => {
                                 <SwiperSlide key={index} className="slider-card-container">
                                     <div className="card">
                                         <div className="slider-card-container">
-                                            <img src={item.image} alt="Image" className="product-image" />
+                                            <img loading='lazy' src={item.image} alt="Image" className="product-image" />
                                             <div className="card-body">
                                                 <p>${item.price}</p>
                                                 <h4>{item.heading}</h4>

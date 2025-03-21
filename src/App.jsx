@@ -12,6 +12,7 @@ import NotFound from './components/NotFound/NotFound';
 import Wishlist from './components/Wishlist/Wishlist';
 import {CartProvider} from './components/Context/CartContext'
 import { WishlistProvider } from "./components/Context/WishlistContext";
+import ScrollToTop from './ScrollToTop'
 
 const App = () => {
   return (
@@ -19,17 +20,9 @@ const App = () => {
       <WishlistProvider>
         <CartProvider>
           <Router>
+            <ScrollToTop/>
             <Nav/>
             <Routes>
-              {/* {
-                AllRoutes.map((route, index) => {
-                  return(
-
-                      <Route path={route.path} element={<route.component />} />
-                  )
-                }
-              )
-              } */}
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />

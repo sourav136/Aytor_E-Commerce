@@ -46,7 +46,7 @@ const Blogs = () => {
                                         <div className="blog-date">
                                             <p>{blogs.date}</p>
                                         </div>
-                                        <img src={BlogsImage} alt="" className='d-block'/>
+                                        <img loading='lazy' src={BlogsImage} alt="" className='d-block'/>
                                         <div className="blog-post-text">
                                             <h5 className='blog-post-h5'>{blogs.heading}</h5>
                                             <p className='blog-post-p'>{blogs.description}</p>
